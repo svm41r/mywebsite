@@ -1975,7 +1975,15 @@
             setTimeout(() => toast.classList.remove('show'), 3500);
         }
 
-    
+        // ===== CTA SUBMIT =====
+        document.getElementById('ctaBtn').addEventListener('click', () => {
+            const email = document.getElementById('ctaEmail').value.trim();
+            if (!email || !email.includes('@') || !email.includes('.')) {
+                showToast('Please enter a valid email address.');
+                return;
+            }
+            showToast("Thanks! I'll reach out within 24 hours.");
+            document.getElementById('ctaEmail').value = '';
         });
         document.getElementById('ctaEmail').addEventListener('keypress', e => {
             if (e.key === 'Enter') document.getElementById('ctaBtn').click();
