@@ -1819,24 +1819,14 @@
             <div className="container">
   {/* ... other code ... */}
   
-  <form 
-    action="https://formspree.io/f/xbdqepqp" 
-    method="POST" 
-    className="your-form-container-class"
-  >
-    <div className="your-input-wrapper-class">
-      <input 
-        type="email" 
-        name="email" 
-        placeholder="your@email.com" 
-        required 
-        className="your-input-styling" 
-      />
-      <button type="submit" className="your-button-styling">
-        Send →
-      </button>
+ <form action="https://formspree.io/f/xbdqepqp" method="POST" class="reveal reveal-delay-2" style="margin-top: 40px; display: flex; justify-content: center; align-items: center; gap: 15px;">
+    <div style="position: relative; width: 100%; max-width: 400px;">
+        <input type="email" name="email" placeholder="your@email.com" required style="width: 100%; padding: 16px 24px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 50px; color: white; font-size: 16px; outline: none; transition: all 0.3s ease;">
     </div>
-  </form>
+    <button type="submit" class="send-btn" style="background: #ff3b30; color: white; border: none; padding: 16px 32px; border-radius: 50px; font-weight: 600; cursor: pointer; transition: all 0.3s ease; white-space: nowrap; display: flex; align-items: center; gap: 8px;">
+        Send <i class="lucide-move-right"></i>
+    </button>
+</form>
 
 </div>
             <div class="footer-col">
